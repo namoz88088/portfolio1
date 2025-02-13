@@ -1,0 +1,251 @@
+/* Umumiy stillar */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #102c57, transparent, #102c57);
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #102c57, white, #102c57);
+  color: #fff;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px #102c57;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__item {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.nav__link {
+  margin: 1rem;
+  color: #102c57;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: 1px solid #102c57;
+  border-radius: 10px;
+  background-color: #102c57;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.nav__link:hover {
+  background-color: #102c578f;
+}
+
+/* Mobil menyu */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 730px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+/* Asosiy bo'limlar */
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.home__title h1 {
+  font-size: 2.5rem;
+  color: wheat;
+}
+
+.home__title p {
+  font-size: 1.2rem;
+  color: #102c57;
+}
+
+/* About section */
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 50px 20px;
+}
+
+.about__title {
+  text-align: center;
+}
+
+.about__title h1 {
+  font-size: 2rem;
+  color: wheat;
+}
+
+.about__content img {
+  width: 100%;
+  height: auto;
+}
+.about__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  padding: 1rem;
+}
+.about__title h1 {
+  font-size: 3rem;
+  color: wheat;
+  margin-bottom: 1rem;
+}
+.about__title p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 2rem;
+  color: #102c57;
+}
+@media (min-width: 768px) {
+  .about {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Loyihalar */
+.projects {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.projects__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.projects__content h3 {
+  font-size: 2rem;
+  color: wheat;
+  margin: 1rem 0;
+}
+.projects__content p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0 1rem;
+  color: white;
+}
+.project {
+  background: url(i.webp) center center no-repeat;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+/* Bog'lanish */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact__form {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+.contact__form label {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #102c57;
+}
+.contact__form input,
+.contact__form textarea {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #102c57;
+}
+
+@media (max-width: 480px) {
+  .home__title h1 {
+    font-size: 2rem;
+  }
+  .home__title p {
+    font-size: 1rem;
+  }
+}
+h1,
+h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #102c57;
+}
+.btn {
+  background-color: #102c57;
+  color: white;
+  font-size: large;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #102c578f;
+}
